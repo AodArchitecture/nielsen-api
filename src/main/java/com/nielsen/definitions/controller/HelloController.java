@@ -23,6 +23,7 @@ public class HelloController {
 	public @ResponseBody String greetings(
 			@RequestParam(value = "name", required = false, defaultValue = "Friend") String name,
 			@PathVariable ValidVersion version) {
+		//Added a comment
 		return String.format(template2, name);
 	}	
 	
